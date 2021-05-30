@@ -1,15 +1,34 @@
-package cucumberOptions;
+package stepdefs;
 
-import org.junit.runner.RunWith;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+public class stepdefsAPItest {
+	
+	@Given("User sets base ")
+	public void user_sets_base() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
 
-@RunWith(Cucumber.class)
+	@Given("user authenticates api request with ")
+	public void user_authenticates_api_request_with() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
 
-@CucumberOptions(
-		features = "src/test/resources/features",
-		glue = "stepdefs" ,stepNotifications = true)
-public class TestRunner {
+	@When("user sends request to get all the response information")
+	public void user_sends_request_to_get_all_the_response_information() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("user gets response with status ")
+	public void user_gets_response_with_status() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
 
 }
