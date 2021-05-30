@@ -8,8 +8,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = "src/test/java/features",
-		glue = "stepdefs/stepdefsAPItest" ,stepNotifications = true)
+		features = {"src/test/java/features"},
+	format={"pretty","html:target/reports/test-report"},
+
+		glue = {"stepdefs/stepdefsAPItest"} ,stepNotifications = true)
 public class TestRunner {
 
 }
