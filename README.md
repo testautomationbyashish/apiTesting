@@ -1,7 +1,7 @@
 # apiTesting
 
-Project
-This is demo project to implement testing for SpaceX APIs using the below libraries.
+Project:
+This is a demo project to implement testing for SpaceX APIs using the below libraries.
 
 Tools/Framework/Libraries
 JDK 13
@@ -48,7 +48,14 @@ Response Body:
 }
 Status Code: 200 OK
 
-
+Request not found by changing company to companies.
+Request URL: https://api.spacexdata.com/v4/companies
+Request Method: GET
+Response Body:
+{
+  
+}
+Status Code: 404 Not Found
 
 
 Testcases for Space-X API Testing
