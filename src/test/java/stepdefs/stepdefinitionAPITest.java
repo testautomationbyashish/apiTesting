@@ -1,6 +1,8 @@
 package stepdefs;
 
 import org.testng.AssertJUnit;
+
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -41,6 +43,32 @@ public class stepdefsAPItest {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("step4");
 		AssertJUnit.assertEquals(code, response.getStatusCode());
+	}
+
+	@And("^response includes the following$")
+	public void response_equals(Map&lt;String,String&gt; responseFields){
+		for (Map.Entry&lt;String, String&gt; field : responseFields.entrySet()) {
+			if(StringUtils.isNumeric(field.getValue())){
+				json.body(field.getKey(), equalTo(Integer.parseInt(field.getValue())));
+			}
+			else{
+				json.body(field.getKey(), equalTo(field.getValue()));
+			}
+		}
+	}
+	
+	
+	
+	@And("^response includes the following in any order$")
+	public void response_contains_in_any_order(Map&lt;String,String&gt; responseFields){
+		for (Map.Entry&lt;String, String&gt; field : responseFields.entrySet()) {
+			if(StringUtils.isNumeric(field.getValue())){
+				json.body(field.getKey(), containsInAnyOrder(Integer.parseInt(field.getValue())));
+			}
+			else{
+				json.body(field.getKey(), containsInAnyOrder(field.getValue()));
+			}
+		}
 	}
 
 
