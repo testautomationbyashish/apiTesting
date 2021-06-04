@@ -23,6 +23,7 @@ public class test04june2021 {
 .when()
 .get("https://api.spacexdata.com/v4/rockets")
 .then().statusCode(200)
+.log().body()
        .body("name[0]",equalTo("Falcon 1"))
        .body("type[0]",equalTo("rocket"))
        .body("engines[0].isp.sea_level",equalTo(267))
