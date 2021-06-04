@@ -19,20 +19,20 @@
   </properties>
 
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>6.10.4</version>
-</dependency>
+</dependency>  -->
   
-  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit 
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
     <version>6.10.4</version>
     <scope>test</scope>
-</dependency>
+</dependency> -->
   
     <dependency>
       <groupId>junit</groupId>
@@ -71,14 +71,22 @@
     <version>3.12.0</version>
 </dependency>
     
-    <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer -->
+    <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer 
 <dependency>
     <groupId>info.cukes</groupId>
     <artifactId>cucumber-picocontainer</artifactId>
     <version>1.2.6</version>
     <type>pom</type>
     <scope>test</scope>
+</dependency>  -->
+
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M5</version>
 </dependency>
+
     
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
@@ -86,6 +94,13 @@
     <artifactId>rest-assured</artifactId>
     <version>4.4.0</version>
     <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>xml-path</artifactId>
+    <version>4.4.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
@@ -102,14 +117,22 @@
     <version>4.4.0</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-common -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured-common</artifactId>
+    <version>4.4.0</version>
+</dependency>
+
+
     
     
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng 
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
     <version>6.10.4</version>
-</dependency>
+</dependency> -->
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
