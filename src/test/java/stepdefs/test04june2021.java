@@ -1,10 +1,10 @@
 package stepdefs;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
-import junit.framework.Assert;
-
 import static org.hamcrest.Matchers.equalTo;
 
 import java.util.HashMap;
@@ -63,7 +63,7 @@ public class test04june2021 {
 		
 		String jsonString= res.asString();
 		
-		Assert.assertEquals(jsonString.contains("Record added"), true);
+		AssertJUnit.assertEquals(jsonString.contains("Record added"), true);
 		
 		
 	}
@@ -112,7 +112,7 @@ public class test04june2021 {
 		        .extract().response();
 		        
 		 String jsonString = res.asString()  ;
-		Assert.assertEquals(jsonString.contains("Record deleted successfully"), true);
+		AssertJUnit.assertEquals(jsonString.contains("Record deleted successfully"), true);
 		        
 		        	}
 
