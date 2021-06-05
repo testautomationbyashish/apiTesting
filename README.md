@@ -64,5 +64,9 @@ Reference documents is https://github.com/r-spacex/SpaceX-API/blob/master/docs/v
 2) When user does a GET query on baseurl https://api.spacexdata.com/v4 AuthType=APIKey; Key=SomeRandomValue ;Add to Header ,he does not get back a response. Status code will be 401.
 3) When user does a GET query on baseurl https://api.spacexdata.com/v3 , he gets no response. Only v4 is supported.
 4) When user does a GET query on https://api.spacexdata.com/v4/company, he should get SpaceX company info. Check address state is "Califormia".
-5) 
+5) Validate the keys with the Min 1 letter and Max more than 256 letters in GET request of APIs.
+6) Verify /query route gives more results for pagination.
+7) Verify limit": 10 gives only 10 records in pagination results.
+8) Verify totalPages": 1, gives only one page result in pagination query.
+9) 
 
