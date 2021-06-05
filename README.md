@@ -68,5 +68,19 @@ Reference documents is https://github.com/r-spacex/SpaceX-API/blob/master/docs/v
 6) Verify /query route gives more results for pagination.
 7) Verify limit": 10 gives only 10 records in pagination results.
 8) Verify totalPages": 1, gives only one page result in pagination query.
-9) 
+9) Verify if "hasPrevPage": false then this should be the first page of response.
+10) Verify if "hasNextPage": false, then this should be the last page of api response.
+11) Verify $text" and "$search" searches all text indexes in a collection. Check that all string fields get indexed
+12) Verify the query "upcoming":true gives Next upcoming launch.
+13) Verify the query sort":"flight_number":"asc" gives back all flights in ascending order of flight number
+14) Verify the query limit: 50 gives only the top 50 records.
+15) Verify the query page: 2 gives records of page 2.
+16) Verify if date_precision is set to month then response should have correct month. Day can be neglected. For example if launch date is 15June2021 and date_precision is month then response having 2020-06-01T00:00:00.000Z is correct. But 2020-07-15T00:00:00.000Z is wrong.
+17) Verify if date is date_utc then response should not have any other timezone except 00.00 hours
+18) Verify if date is date_unix then response should not have any other timezone except 00.00 hours
+19) Verify if date is date_local then response should be in local country timezone.
+20) Verify if date net=true then in response launch date should not be lesser than the set date.
+21) Verify Post request to create rocket https://api.spacexdata.com/v4/rockets with name,id and type in body creates a new rocket. User should be able to see this rocket in GET query.
+22) Verify GET /capsules gives the list of all capsules.
+23) 
 
