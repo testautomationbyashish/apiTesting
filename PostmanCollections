@@ -3,7 +3,7 @@
 		"_postman_id": "74d96b27-cd7a-4799-983c-d9275f80e6d0",
 		"name": "r/SpaceX API V4",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
+	}, 
 	"item": [
 		{
 			"name": "Capsules",
