@@ -82,5 +82,12 @@ Reference documents is https://github.com/r-spacex/SpaceX-API/blob/master/docs/v
 20) Verify if date net=true then in response launch date should not be lesser than the set date.
 21) Verify Post request to create rocket https://api.spacexdata.com/v4/rockets with name,id and type in body creates a new rocket. User should be able to see this rocket in GET query.
 22) Verify GET /capsules gives the list of all capsules.
-23) 
+23) Verify GET /capsules/123 gives the list of capsule 123.
+24) Verify GET /capsules/NOtExisting should give result Not Found.
+25) Verify POST /capsules/query should create new capsule.
+26) Verify  if query is wrong in POST /capsules/query mongoose error is thrown 400 Bad Request.
+27) Verify PATCH /capsules/:id updates an already existing capsule id.
+28) Verify DELETE /capsules/9784 deletes an already existing capsule id 9784
+29) Verify after Deleting id 9784 if user performs GET /capsules/9784 he gets Not Found.
+30) 
 
