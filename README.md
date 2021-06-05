@@ -96,5 +96,22 @@ Reference documents is https://github.com/r-spacex/SpaceX-API/blob/master/docs/v
 34) Verify API should not take more than 5 seconds (or the defined threshold value) to generate response.
 35) Verify if multiple POST requests are sent through excel utility, they shoudl create data correctly.
 36) Verify if id 123 is created by POST with name=ashish1 =>then PATCH changes its name to ashish2=> then DELETE id 123 is done=>Then again POST 123 is done.After  this entire workflow => GET query should finally show id 123 with name=ashish1
-37) 
+37) Verify GET /cores should return list of all cores.
+38) Verify GET /cores/id should return core with specified id.
+39) Verify POST /cores should create a new core.
+40) Verify PATCH /cores/id should update an already existing core with this specified id.
+41) Verify DELETE /cores/id should delete the core with this specified id.
+42) User should not see any result when he does a GET query on above specified id.
+43) Verify GET /crew should return list of all cores.
+44) Verify GET /crew/id should return core with specified id.
+45) Verify POST /crew should create a new core.
+46) Verify PATCH /crew/id should update an already existing core with this specified id.
+47) Verify DELETE /crew/id should delete the core with this specified id.
+48) User should not see any result when he does a GET query on above specified id.
+49) Verify GET /dragons should return list of all cores.
+50) Verify GET /dragons/id should return core with specified id.
+51) Verify POST /dragons should create a new core.
+52) Verify PATCH /dragons/id should update an already existing core with this specified id.
+53) Verify DELETE /dragons/id should delete the core with this specified id.
+54) User should not see any result when he does a GET query on above specified id.
 
