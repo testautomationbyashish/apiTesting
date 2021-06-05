@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/java/features"},
 	format={"pretty","html:target/reports/test-report"},
 
-		glue = {"stepdefs/stepdefsAPItest"} ,stepNotifications = true)
+		glue = {"stepdefs/stepdefsAPItest"} )
 public class TestRunner {
 
 }
